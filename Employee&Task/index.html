@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
+    <title>Employee&Task</title>
+</head>
+
+<body>
+
+
+    <div class="forms">
+
+        <form class="form">
+
+            <h2>Add Employees</h2>
+
+            <div class="common">
+                <div class="first">
+                    <label for="firstName">Firstname</label>
+                    <input type="text" name="firstName" placeholder="Gabriel" id="firstName">
+                </div>
+                <div class="last">
+                    <label for="secondName">Lastname</label>
+                    <input type="text" name="secondName" placeholder="Dokov" id="lastName">
+                </div>
+            </div>
+
+            <label for="email">Email</label>
+            <input type="text" name="email" placeholder="example@gmail.com" id="email">
+
+            <label for="phone">Phone Number</label>
+            <input type="number" name="phone" placeholder="0891234567" id="phone">
+
+            <label for="birth">DataofBirth</label>
+            <input type="date" name="birth" placeholder="09.03.2023" id="birth">
+
+            <label for="salary">Salary</label>
+            <input type="number" name="salary" placeholder="1000" id="salary">
+
+            <input class="submitBtn" type="submit" value="Add Employee">
+
+        </form>
+
+
+        <form class="form">
+
+            <h2>Task</h2>
+
+            <label for="title">Title</label>
+            <input type="text" name="title" id="title">
+
+            <label for="description">Desctiption</label>
+            <input type="text" name="description" id="description">
+
+            <label for="assignee">Assignee</label>
+            <input type="text" name="assignee" id="assignee">
+
+            <input class="taskBtn" type="submit" value="Add Task">
+
+
+
+        </form>
+
+
+
+    </div>
+
+
+
+
+
+    <div class="container">
+        
+
+        <table id="employeeList">
+
+        
+
+            <thead>
+
+                <tr>
+
+                    <th>First Name</th>
+
+                    <th>Last Name</th>
+
+                    <th>Email</th>
+
+                    <th>Phone Number</th>
+
+                    <th>Date of birth</th>
+
+                    <th>Salary</th>
+
+                    <th>Actions</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+
+                    <td>Gabriel</td>
+                    <td>Dokov</td>
+                    <td>gabriel@gmail.com</td>
+                    <td>0891234567</td>
+                    <td>16.09.1999</td>
+                    <td>800$</td>
+                    <td class="actions">
+                        <button class="info"><i class="fa-sharp fa-solid fa-circle-info"></i></button>
+                        <button class="delete"><i class="fa-solid fa-delete-left"></i></button>
+                        <button class="update"><i class="fa-sharp fa-regular fa-pen-to-square"></i></button>
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+
+
+        </table>
+
+
+        <table id="task">
+
+            <thead>
+
+                <tr>
+
+                    <th>
+                        Title
+                    </th>
+
+                    <th>
+                        Description
+                    </th>
+
+                    <th>
+                        Assigne
+                    </th>
+
+                    <th>
+                        Actions
+                    </th>
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                <tr>
+                    <td>
+                        Do the dishes
+                    </td>
+
+                    <td>
+                        Clear the dishes
+                    </td>
+
+                    <td>
+                        Gabriel
+                    </td>
+
+                    <td class="actiontask">
+                        <button class="info"><i class="fa-sharp fa-solid fa-circle-info"></i></button>
+                        <button class="delete"><i class="fa-solid fa-delete-left"></i></button>
+                        <button class="update"><i class="fa-sharp fa-regular fa-pen-to-square"></i></button>
+                    </td>
+                </tr>
+            </tbody>
+
+
+        </table>
+    </div>
+
+    <div class="information">
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>
